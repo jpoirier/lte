@@ -1,0 +1,31 @@
+6-10-10
+-------
+- still need to validate the CRC 24_A table
+- stopped at the segmentation of blocks, func BlkSeg (hideous stuff!!)
+- finish the adhoc Append function
+
+- as far as a turbo encoder is concerned us the RSC version
+
+6-18-10
+-------
+- reformat CRC tables
+- fixed the crc test to handle the CRC slice return value
+
+6-19-10
+-------
+- validated the orphan bit crcs
+- started writings tests for the adhoc methods
+
+6-21-10
+-------
+- validated the Rsh method via TestRsh but it needs to be refactored
+- finished the adhoc.go file, but the scope of the unit tests need to be expanded
+
+6-22-10
+-------
+- left off at the BlkSeg function, the blkseg buffer creation needs to change
+  so that each segment slice is an independant slice and not a park of any
+  contiguous buffer, because of the way the addhoc functions work
+
+
+
